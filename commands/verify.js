@@ -1,8 +1,8 @@
 module.exports = {
     name: 'verify',
     async execute(message, args) {
-        const role = message.guild.roles.get('755570648088182804');
-        const role2 = message.guild.roles.get('756129943783735316');
+        const role = message.guild.roles.get('756638307307487271');
+        const role2 = message.guild.roles.get('756638236188737597');
         if (!role) return message.channel.send('Verify role does not exist.');
         try {
             await message.member.addRole(role.id);

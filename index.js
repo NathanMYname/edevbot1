@@ -80,7 +80,7 @@ bot.on('guildBanRemove', (guild, user) => {
 });
 
 bot.on('guildMemberAdd', member => {
-    const autoRole = member.guild.roles.get('756129943783735316');
+    const autoRole = member.guild.roles.get('756638307307487271');
     
     if(!autoRole) return;
 

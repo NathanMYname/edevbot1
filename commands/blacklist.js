@@ -3,7 +3,7 @@ const fs = require('fs');
 module.exports = {
     name: 'blacklist',
     async execute(message, args) {
-        if(message.author.id !== '529512479789809664') return message.reply('ya dont hve perms bud');
+        if(message.author.id !== '529512479789809664', '735217121314865242') return message.reply('ya dont hve perms bud');
         const mentionedUser = message.mentions.users.first();
         if(!args[0]) return message.channel.send('Mention a valid user.');
         if(!mentionedUser) return message.channel.send('The mentioned user does not exist.');
