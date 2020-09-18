@@ -18,7 +18,7 @@ for (const file of commandFiles) {
 
 bot.on('ready', () => {
     console.log('Ready!');
-    bot.user.setActivity('over server')
+    bot.user.setActivity('Crown Royal', { type: "WATCHING"})
 })
 
 
