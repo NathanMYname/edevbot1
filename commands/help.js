@@ -1,7 +1,7 @@
 Discord = require('discord.js');
 
 module.exports = {
-    name: 'name',
+    name: 'help',
     execute(message, args) {
         const eEmbed = new Discord.RichEmbed()
         .setColor('BLUE')
