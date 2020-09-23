@@ -106,12 +106,13 @@ bot.on('message', message => {
     if (!message.content.startsWith(prefix) || message.author.bot) return;
     const blacklist = require('./blacklist.json');
     const blacklistUsers = Object.keys(blacklist);
-    let listed = false;
+    let listedsafda = false;
     blacklistUsers.forEach(id => {
-        if (message.author.id === id) listed = true;
+        if (message.author.id === id) listedsafda = true;
     });
 
-    if (listed === true) return message.channel.send('you are blacklisted from \`edevBot\`');
+    if(listedsafda === true) return message.channel.send('You are blacklisted from \`CrownBot\`');
+    
 	const args = message.content.slice(prefix.length).trim().split(/ +/);
     const commandName = args.shift().toLowerCase();
 
