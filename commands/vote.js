@@ -57,7 +57,7 @@ module.exports = {
                             .addField(embedTopic, `\:x: ${secondTopic}`)
 
 
-                        message.channel.send(voteEmbed).then(msg => msg.react(`\:white_check_mark:`)).then(reaction => reaction.message.react(`\:x:`)).catch(err => console.log(err));
+                        sendToChannel.channel.send(voteEmbed).then(msg => msg.react(`\:white_check_mark:`)).then(reaction => reaction.message.react(`\:x:`)).catch(err => console.log(err));
                     } catch (ERROR) {
                         message.channel.send('You did not respond fast enough.');
                         console.log(ERROR);
