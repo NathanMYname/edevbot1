@@ -18,7 +18,7 @@ module.exports = {
         try {
             await fs.writeFile('././blacklist.json', JSON.stringify(blacklist, null, 2), (err) => {
                 if (err) {
-                    return console.log('eeroeroeoreoroeoroeroeoreorooeroeoroer', err);
+                    return console.log('eeroeroeoreoroeoroeroeoreorooeroeoroer' + err);
                 } else {
                     console.log('sucblacklist ' + mentionedUser.tag);
                 }
