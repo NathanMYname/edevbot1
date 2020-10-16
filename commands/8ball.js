@@ -1,7 +1,7 @@
 module.exports = {
     name: '8ball',
     execute(message, args) {
-        var test = args[0];
-        if (test) return test;
+        
+        if (args[0]) return message.channel.send(args[0]);
     }
 }
